@@ -5,14 +5,25 @@ Marketing Page for International Child Nutrition Status Tracking
 
 # MVP: 
 -Onboarding for a new admin user (permission over all countries, and the ability to add additional admin accounts and country specific accounts)
+
 -Onboarding for a new country specific user (can only add child records to the country they are added to)
+
 -Ability to create a new country for adding child records to. 
--Within a country’s page, ability for user to add a new child screening record. Fields should include child’s name, parent name and contact info, date of screening, location of screening (both country name and community name) date of birth, (auto populate the child’s age in months based on the entered date of birth), gender, height (cm), and weight (kg). 
+
+-Within a country’s page, ability for user to add a new child screening record. Fields should include: 
+  -- child’s name, parent name and contact info, 
+  -- date of screening, 
+  -- location of screening (both country name and community name),
+  -- date of birth, (auto populate the child’s age in months based on the entered date of birth), 
+  -- gender, 
+  -- height (cm), and 
+  -- weight (kg). 
+
 -Homepage should show a list of all the countries. Clicking on a country shows a list of communities where screenings have taken place. Clicking on a community shows a list of children screened. 
+
 -Page to view an individual child. If they have multiple screening instances, show a graph of their weight over time. 
 
-# Stretch: Ability to download an excel sheet of all records for a specific screening date. 
-
-
+# Stretch: 
+Ability to download an excel sheet of all records for a specific screening date. 
 
 # Sign by Elijah
