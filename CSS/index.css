@@ -164,6 +164,28 @@ img {
   max-width: 100%;
   height: auto;
 }
+.container {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0% auto;
+  padding: 0% 2%;
+}
+.logo {
+  margin: 0% auto;
+}
+.login {
+  margin: 0% auto;
+  padding: 2.5% 0 0 0;
+  color: #000;
+  font-size: 20px;
+}
+.header-name {
+  background-color: #2db1a8;
+  color: #fff;
+  text-align: center;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
