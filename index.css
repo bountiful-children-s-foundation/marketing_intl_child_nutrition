@@ -4,6 +4,76 @@ font-family: 'PT Sans', sans-serif;
 font-family: 'Lato', sans-serif;
 */
 
-.card {
-    display: none;
+
+/* Amber's testing css page */
+
+/* Countries Accordian Page Style */
+
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+
+html,body {
+  font-family: 'Encode Sans Expanded', sans-serif; 
+  height: 100%;
+  margin: 15px;
 }
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+// Buttons
+.btn {
+  width: 100%;
+  border: 1px solid orange;
+  background-color: deeppink;
+  display: block;
+  text-align: left;
+  //radius: 100%;
+}
+
+.btn:hover {
+  background-color: orange;
+}
+
+.btn:after {
+  font-size: 12px;
+  font-weight: 700;
+  color: orange;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+
+  &.show {
+    max-height: 99em;
+    transition: max-height .5s ease-in-out;
+    background-color: lightgrey;
+    color: black;
+    text-align: left;
+  }
+  
+  &.show li {
+    display: flex;
+    justify-content: left;
+  }
+}
+
+// Community Info
+.block {
+  margin-top: 10px;
+  background: #f5f5f5;
+  padding: 0;
+  // height: 250px;
+  
+  &__content {
+    border: 1px solid deeppink;
+    padding: 1.5em;
+    height: 100%;
+  }
+}
+
