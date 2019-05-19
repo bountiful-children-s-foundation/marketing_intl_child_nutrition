@@ -7,7 +7,9 @@ font-family: 'Lato', sans-serif;
 
 /* Amber's testing css page */
 
-/* Countries Accordian Page Style */@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+/* Countries Accordian Page Style */
+
+@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
 
 html,body {
   font-family: 'Lato','PT Sans', sans-serif; 
