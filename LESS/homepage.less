@@ -13,15 +13,16 @@ html,body {
 }
 
 
-h1 {
-  background-color: @header-line; /* @header-line */
+h2 {
+  background-color: @header-line;
   color: white;
   display: flex;
   justify-content: center;
 }
 /* Buttons */
 .btn {
-  width: 100%;
+  width: 75%;
+  min-height: 7%;
   border: 1px solid @btn-two;
   background-color: @btn-one; 
   color: #fff;
@@ -52,7 +53,7 @@ h1 {
   &.show {
     max-height: 99em;
     transition: max-height .5s ease-in-out;
-    background-color: lightgrey;
+    background-color: @fog;
     color: black;
     text-align: left;
     margin-bottom: 5px;

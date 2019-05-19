@@ -229,14 +229,14 @@ body {
 }
 h1 {
   background-color: #2db1a8;
-  /* @header-line */
   color: white;
   display: flex;
   justify-content: center;
 }
 /* Buttons */
 .btn {
-  width: 100%;
+  width: 75%;
+  min-height: 7%;
   border: 1px solid #2db1a8;
   background-color: #F6A44B;
   color: #fff;
