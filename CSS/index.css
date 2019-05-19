@@ -134,15 +134,13 @@ html {
   font-size: 62.5%;
 }
 html,
-body {
-  font-family: 'Roboto', sans-serif;
-}
+body,
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Lato', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -204,4 +202,91 @@ td a {
 }
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+/* Countries Accordian Page Style */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+html,
+body {
+  font-family: 'Lato', 'PT Sans', sans-serif;
+  height: 100%;
+  margin: 15px;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+h1 {
+  background-color: #2db1a8;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+/* Buttons */
+.btn {
+  width: 75%;
+  min-height: 7%;
+  border: 1px solid #2db1a8;
+  background-color: #F6A44B;
+  color: #fff;
+  display: block;
+  text-align: left;
+  border-radius: 0%;
+  margin-bottom: 3px;
+}
+.btn:hover {
+  background-color: #D45E27;
+}
+.btn:after {
+  font-size: 12px;
+  font-weight: 700;
+  color: #D45E27;
+  float: right;
+  margin-left: 5px;
+}
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.collapse.show {
+  max-height: 99em;
+  transition: max-height 0.5s ease-in-out;
+  background-color: lightgrey;
+  color: black;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.collapse.show li {
+  display: flex;
+  justify-content: left;
+}
+/* Community Info */
+.block {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 0;
+  /* height: 250px; */
+}
+.block__content {
+  border: 1px solid #ef6b2d;
+  /* @btn-hover */
+  padding: 1.5em;
+  height: 100%;
+}
+.block li {
+  color: #000;
 }
