@@ -7,12 +7,10 @@ font-family: 'Lato', sans-serif;
 
 /* Amber's testing css page */
 
-/* Countries Accordian Page Style */
-
-@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
+/* Countries Accordian Page Style */@import url("https://fonts.googleapis.com/css?family=Lato|PT+Sans");
 
 html,body {
-  font-family: 'Encode Sans Expanded', sans-serif; 
+  font-family: 'Lato','PT Sans', sans-serif; 
   height: 100%;
   margin: 15px;
 }
@@ -21,24 +19,33 @@ html,body {
     box-sizing: border-box;
 }
 
-// Buttons
+
+h1 {
+  background-color: #2db1a8; /* @header-line */
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+/* Buttons */
 .btn {
   width: 100%;
-  border: 1px solid orange;
-  background-color: deeppink;
+  border: 1px solid #2db1a8;
+  background-color: #faa422; /* @btn-one */
+  color: #fff;
   display: block;
   text-align: left;
-  //radius: 100%;
+  border-radius: 0%;
+  margin-bottom: 3px;
 }
 
 .btn:hover {
-  background-color: orange;
+  background-color: #ef6b2d; /* @btn-hover */
 }
 
 .btn:after {
   font-size: 12px;
   font-weight: 700;
-  color: orange;
+  color: #ef6b2d; /* @btn-hover */
   float: right;
   margin-left: 5px;
 }
@@ -63,17 +70,21 @@ html,body {
   }
 }
 
-// Community Info
+/* Community Info */
 .block {
   margin-top: 10px;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
+  color: #000;
   padding: 0;
   // height: 250px;
   
   &__content {
-    border: 1px solid deeppink;
+    border: 1px solid #ef6b2d; /* @btn-hover */
     padding: 1.5em;
     height: 100%;
   }
+  
+  li {
+    color: #000;
+  }
 }
-
