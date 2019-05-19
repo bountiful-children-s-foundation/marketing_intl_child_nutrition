@@ -238,8 +238,7 @@ h1 {
 .btn {
   width: 100%;
   border: 1px solid #2db1a8;
-  background-color: #faa422;
-  /* @btn-one */
+  background-color: #F6A44B;
   color: #fff;
   display: block;
   text-align: left;
@@ -247,14 +246,12 @@ h1 {
   margin-bottom: 3px;
 }
 .btn:hover {
-  background-color: #ef6b2d;
-  /* @btn-hover */
+  background-color: #D45E27;
 }
 .btn:after {
   font-size: 12px;
   font-weight: 700;
-  color: #ef6b2d;
-  /* @btn-hover */
+  color: #D45E27;
   float: right;
   margin-left: 5px;
 }
@@ -270,6 +267,7 @@ h1 {
   background-color: lightgrey;
   color: black;
   text-align: left;
+  margin-bottom: 5px;
 }
 .collapse.show li {
   display: flex;

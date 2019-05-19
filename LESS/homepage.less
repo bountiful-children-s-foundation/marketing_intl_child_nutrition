@@ -23,7 +23,7 @@ h1 {
 .btn {
   width: 100%;
   border: 1px solid @btn-two;
-  background-color: #faa422; /* @btn-one */
+  background-color: @btn-one; 
   color: #fff;
   display: block;
   text-align: left;
@@ -32,13 +32,13 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ef6b2d; /* @btn-hover */
+  background-color: @btn-hover;
 }
 
 .btn:after {
   font-size: 12px;
   font-weight: 700;
-  color: #ef6b2d; /* @btn-hover */
+  color: @btn-hover;
   float: right;
   margin-left: 5px;
 }
@@ -55,6 +55,7 @@ h1 {
     background-color: lightgrey;
     color: black;
     text-align: left;
+    margin-bottom: 5px;
   }
   
   &.show li {
