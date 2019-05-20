@@ -236,23 +236,24 @@ h2 {
 }
 /* Buttons */
 .btn {
-  width: 75%;
+  width: 50%;
   min-height: 7%;
   border: 1px solid #2db1a8;
-  background-color: #F6A44B;
+  background-color: #FF9700;
   color: #fff;
   display: block;
   text-align: left;
   border-radius: 0%;
   margin-bottom: 3px;
 }
-.btn:hover {
-  background-color: #D45E27;
+.btn:hover,
+.btn:active {
+  background-color: #FFC300;
 }
 .btn:after {
   font-size: 12px;
   font-weight: 700;
-  color: #D45E27;
+  color: #FFC300;
   float: right;
   margin-left: 5px;
 }
@@ -274,6 +275,9 @@ h2 {
   display: flex;
   justify-content: left;
 }
+#expand {
+  width: 30%;
+}
 /* Community Info */
 .block {
   margin-top: 10px;
@@ -282,7 +286,7 @@ h2 {
   padding: 0;
 }
 .block__content {
-  border: 1px solid #D45E27;
+  border: 1px solid #FFC300;
   padding: 1.5em;
   height: 100%;
 }
