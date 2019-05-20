@@ -236,7 +236,7 @@ h2 {
 }
 /* Buttons */
 .btn {
-  width: 50%;
+  width: 40%;
   min-height: 7%;
   border: 1px solid #2db1a8;
   background-color: #FF9700;
@@ -244,10 +244,11 @@ h2 {
   display: block;
   text-align: left;
   border-radius: 0%;
-  margin-bottom: 3px;
+  margin: 3px 30%;
+  font-size: 2em;
+  padding: 1% 25px;
 }
-.btn:hover,
-.btn:active {
+.btn:hover {
   background-color: #FFC300;
 }
 .btn:after {
@@ -274,10 +275,15 @@ h2 {
 .collapse.show li {
   display: flex;
   justify-content: left;
+  flex-wrap: wrap;
+  padding-left: 1em;
+  list-style-position: outside;
 }
+/*
 #expand {
-  width: 30%;
+    width: 30%;
 }
+*/
 /* Community Info */
 .block {
   margin-top: 10px;
@@ -294,5 +300,7 @@ h2 {
   color: #000;
 }
 .block li:hover {
-  text-decoration: #2db1a8;
+  color: #2db1a8;
+  text-decoration: underline;
+  list-style-position: outside;
 }

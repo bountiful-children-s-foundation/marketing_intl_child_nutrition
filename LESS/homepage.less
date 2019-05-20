@@ -15,13 +15,12 @@ html,body {
 
 h2 {
   color: @font-color;
-  
 }
+
 /* Buttons */
 
-
 .btn {
-  width: 50%;
+  width: 40%;
   min-height: 7%;
   border: 1px solid @btn-two;
   background-color: @btn-one; 
@@ -29,10 +28,12 @@ h2 {
   display: block;
   text-align: left;
   border-radius: 0%;
-  margin-bottom: 3px;
+  margin: 3px 30%;
+  font-size: 2em;
+  padding: 1% 25px;
 }
 
-.btn:hover, .btn:active {
+.btn:hover {
   background-color: @btn-hover;
 }
 
@@ -43,6 +44,7 @@ h2 {
   float: right;
   margin-left: 5px;
 }
+
 
 .collapse {
   display: block;
@@ -62,12 +64,17 @@ h2 {
   &.show li {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
+    padding-left: 1em;
+    list-style-position: outside;
   }
 }
-
+/*
 #expand {
     width: 30%;
 }
+*/
+
 
 /* Community Info */
 .block {
@@ -87,6 +94,8 @@ h2 {
   }
 
   li:hover {
-      text-decoration: @btn-two;
+      color: @btn-two;
+      text-decoration: underline;
+      list-style-position: outside;
   }
 }
