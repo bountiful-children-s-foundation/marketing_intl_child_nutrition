@@ -186,6 +186,7 @@ img {
   padding: 0.75em 0 0.75em 3em;
   display: flex;
   justify-content: left;
+  font-weight: 700;
 }
 table {
   border-collapse: collapse;
@@ -289,5 +290,5 @@ h2 {
   color: #000;
 }
 .block li:hover {
-  border-bottom: 1.5px solid #2db1a8;
+  text-decoration: #2db1a8;
 }
