@@ -182,7 +182,11 @@ img {
 .header-name {
   background-color: #2db1a8;
   color: #fff;
-  text-align: center;
+  margin-top: 1em;
+  padding: 0.75em 0 0.75em 3em;
+  display: flex;
+  justify-content: left;
+  font-weight: 700;
 }
 table {
   border-collapse: collapse;
@@ -227,31 +231,29 @@ body {
 ::before {
   box-sizing: border-box;
 }
-h1 {
-  background-color: #2db1a8;
-  color: white;
-  display: flex;
-  justify-content: center;
+h2 {
+  color: #000;
 }
 /* Buttons */
 .btn {
-  width: 75%;
+  width: 50%;
   min-height: 7%;
   border: 1px solid #2db1a8;
-  background-color: #F6A44B;
+  background-color: #FF9700;
   color: #fff;
   display: block;
   text-align: left;
   border-radius: 0%;
   margin-bottom: 3px;
 }
-.btn:hover {
-  background-color: #D45E27;
+.btn:hover,
+.btn:active {
+  background-color: #FFC300;
 }
 .btn:after {
   font-size: 12px;
   font-weight: 700;
-  color: #D45E27;
+  color: #FFC300;
   float: right;
   margin-left: 5px;
 }
@@ -264,7 +266,7 @@ h1 {
 .collapse.show {
   max-height: 99em;
   transition: max-height 0.5s ease-in-out;
-  background-color: lightgrey;
+  background-color: #f2f2f2;
   color: black;
   text-align: left;
   margin-bottom: 5px;
@@ -273,20 +275,24 @@ h1 {
   display: flex;
   justify-content: left;
 }
+#expand {
+  width: 30%;
+}
 /* Community Info */
 .block {
   margin-top: 10px;
   background-color: #f5f5f5;
   color: #000;
   padding: 0;
-  /* height: 250px; */
 }
 .block__content {
-  border: 1px solid #ef6b2d;
-  /* @btn-hover */
+  border: 1px solid #FFC300;
   padding: 1.5em;
   height: 100%;
 }
 .block li {
   color: #000;
+}
+.block li:hover {
+  text-decoration: #2db1a8;
 }

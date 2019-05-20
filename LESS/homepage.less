@@ -14,25 +14,25 @@ html,body {
 
 
 h2 {
-  background-color: @header-line;
-  color: white;
-  display: flex;
-  justify-content: center;
+  color: @font-color;
+  
 }
 /* Buttons */
+
+
 .btn {
-  width: 75%;
+  width: 50%;
   min-height: 7%;
   border: 1px solid @btn-two;
   background-color: @btn-one; 
-  color: #fff;
+  color: @primary-color;
   display: block;
   text-align: left;
   border-radius: 0%;
   margin-bottom: 3px;
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
   background-color: @btn-hover;
 }
 
@@ -65,21 +65,28 @@ h2 {
   }
 }
 
+#expand {
+    width: 30%;
+}
+
 /* Community Info */
 .block {
   margin-top: 10px;
   background-color: #f5f5f5;
   color: #000;
   padding: 0;
-  /* height: 250px; */
   
   &__content {
-    border: 1px solid #ef6b2d; /* @btn-hover */
+    border: 1px solid @btn-hover; 
     padding: 1.5em;
     height: 100%;
   }
   
   li {
     color: #000;
+  }
+
+  li:hover {
+      text-decoration: @btn-two;
   }
 }
