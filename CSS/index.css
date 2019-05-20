@@ -182,7 +182,10 @@ img {
 .header-name {
   background-color: #2db1a8;
   color: #fff;
-  text-align: center;
+  margin-top: 1em;
+  padding: 0.75em 0 0.75em 3em;
+  display: flex;
+  justify-content: left;
 }
 table {
   border-collapse: collapse;
@@ -228,10 +231,7 @@ body {
   box-sizing: border-box;
 }
 h2 {
-  background-color: #2db1a8;
-  color: white;
-  display: flex;
-  justify-content: center;
+  color: #000;
 }
 /* Buttons */
 .btn {
@@ -279,14 +279,15 @@ h2 {
   background-color: #f5f5f5;
   color: #000;
   padding: 0;
-  /* height: 250px; */
 }
 .block__content {
-  border: 1px solid #ef6b2d;
-  /* @btn-hover */
+  border: 1px solid #D45E27;
   padding: 1.5em;
   height: 100%;
 }
 .block li {
   color: #000;
+}
+.block li:hover {
+  border-bottom: 1.5px solid #2db1a8;
 }
