@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>Marketing Page | Bountiful Children's Foundation</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Marketing Page | Bountiful Children's Foundation</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
+
+    <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
 
   <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -18,10 +23,12 @@
 
 <body>
 
-    <div class="top-bar"> <!-- Change to "nav-bar" on this one page? -->
+    <div class="top-bar">
+        <!-- Change to "nav-bar" on this one page? -->
         <div class="container">
-            <a href="https://bountifulchildrensfoundation.org/"><img src ="../images/logo.png" class="logo"/ alt="Logo for Bountiful Children's Foundation"></a>
-            
+            <a href="https://bountifulchildrensfoundation.org/"><img src="images/logo.png" class="logo"/
+                    alt="Logo for Bountiful Children's Foundation"></a>
+
             <div class="login">
                 <a href="#">Our Team</a> <!-- Create this page for stretch -->
                 <a href="../HTML/country.html">Our Work</a> 
@@ -32,13 +39,30 @@
 
     <h2 class="header-name">Bountiful Child Nutrition Tracker</h2>
     
-    <!-- Elijah's Carousel Code Starts Here -->
-
-
-    <!-- App Highlights Here -->
     <p>There are a lot of child malnutrition nonprofits around the globe. It’s difficult to keep track of 
         all the data for thousands of kids that are screened. This apps allows their data to be entered 
         and saved, and tracked over time. It keeps records organized by both country name and community name.</p>
+    
+        <!-- Carousel Code Starts Here -->
+    <div class="child-Slider" id="slider-1">
+        <img src="images/slide-1.jpg" alt="">
+        <img src="images/slide-2.jpg" alt="">
+        <img src="images/slide-3.jpg" alt="">
+        <img src="images/slide-4.jpg" alt="">
+        <img src="images/slide-5.PNG" alt="">
+    </div>
+    <!-- Toggle switches for the carousel code -->
+    <script src="js/slider.js"></script>
+    <script>
+        new childSlider('slider-1', {
+            autoplay: true, // autoplay on / off
+            effect: 'slide', // fade, scale, slide, slide-top
+            duration: 5000, // duration till the next slide
+            bullets: true, // show / hide bullets
+        });
+    </script>
+
+    <!-- App Highlights -->
 
     <div>
         <div class="countries">
@@ -60,7 +84,7 @@
     </div>
 
     <!-- Call to Action Here -->
-    
+
 
     <footer class="footer">
         <p>©2019 Bountiful Children's Foundation</p>
