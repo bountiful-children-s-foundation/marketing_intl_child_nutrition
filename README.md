@@ -17,4 +17,3 @@ Per Lead PM Emily McClanahan's new recommendation --Amber
 Carousel
 Team Page
 
-# Sign by Elijah
