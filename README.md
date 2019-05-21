@@ -6,16 +6,14 @@ There are a lot of child malnutrition nonprofits around the globe. It’s diffic
 
 ## MVP: 
 Marketing page:
-1.  Link to live site
-* Found in Logo image
+1.  Link to live site - Found in Logo image
 2.  Nav Bar
-3.  Link to current work so far
-* Found in "Our Work" Link
+3.  Link to current work so far - Found in "Our Work" Link
 
 
 Per Lead PM Emily McClanahan's new recommendation --Amber
 
 ## Stretch: 
-Carousel
-Team Page
+1. Carousel 
+2. Team Page - Found in "About Us" Link
 
