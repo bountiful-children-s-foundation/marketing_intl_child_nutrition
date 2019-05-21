@@ -26,4 +26,3 @@ Marketing Page for International Child Nutrition Status Tracking
 # Stretch: 
 Ability to download an excel sheet of all records for a specific screening date. 
 
-# Sign by Elijah
