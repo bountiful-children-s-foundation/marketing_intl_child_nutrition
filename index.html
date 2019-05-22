@@ -10,31 +10,30 @@
     <title>Marketing Page | Bountiful Children's Foundation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+      crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css"/>
     <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
-
-    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
 </head>
 
 <body>
+    <header class="mkt-body">
+        <nav class="nav">
+            <ul class="links">
+                <li><a href="https://bountifulchildrensfoundation.org/" class="logo"><img src="images/logo.png"
+                        alt="Logo for Bountiful Children's Foundation"></a></li>
+                <li><a href="#">Our Team</a></li> <!-- Create this page for stretch -->
+                <li><a href="../HTML/country.html">Our Work</a></li>
+                <li><a href="https://bountifulchildrensfoundation.org/how-to-help">Get Involved</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="header-name">Bountiful Child Nutrition Tracker</h2>
+    
 
-    <div class="top-bar">
-        <!-- Change to "nav-bar" on this one page? -->
-        <div class="container">
-            <a href="https://bountifulchildrensfoundation.org/"><img src="images/logo.png" class="logo"/
-                    alt="Logo for Bountiful Children's Foundation"></a>
-
-            <div class="login">
-                <a href="#">Our Team</a> <!-- Create this page for stretch -->
-                <a href="HTML/country.html">Our Work</a>
-                <a href="#"></a>
-            </div>
-        </div>
-    </div>
-
-    <h2 class="header-name">Here's an h2 header</h2>
-
-    <!-- Carousel Code Starts Here -->
+        <!-- Carousel Code Starts Here -->
+<section>
     <div class="child-Slider" id="slider-1">
         <img src="images/slide-1.jpg" alt="">
         <img src="images/slide-2.jpg" alt="">
@@ -52,9 +51,61 @@
             bullets: true, // show / hide bullets
         });
     </script>
-    <!-- CTA Here -->
+</section>
 
-    <footer>
+    <!-- App Highlights -->
+<section class="features">
+    <p class="features-intro">There are a lot of child malnutrition nonprofits around the globe. It’s difficult keeping track of 
+            all the data for thousands of kids that are screened.<br><br>This app saves and tracks their data 
+            over time. Additionally, it keeps records organized by both country name and community name</p>
+    <div class="cards">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-title">Helping Over 18 Countries</div>
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <div class="card-back">
+                    <p class="card-text">Admin Users can create a new country. All communities 
+                            serviced in a country are accessible to Admin Users. Clicking on a country 
+                            shows a list of communities where screenings have taken place.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-title">Get Community Specific</div>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="card-back">
+                    <p class="card-text">Within communities, Admin Users can review all children. Clicking on a 
+                community shows a list of children screened.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-title">The Individual Matters</div>
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="card-back">
+                    <p class="card-text">User can view an individual child. If a child has multiple screening instances, this app
+                shows a graph of their weight over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action Here -->
+<a href="../HTML/country.html" class="cta">Ready to See More?</a>
+
+
+<!-- Footer -->
+    <footer class="footer">
         <p>©2019 Bountiful Children's Foundation</p>
     </footer>
-</body>
+  </body>
+</html>
