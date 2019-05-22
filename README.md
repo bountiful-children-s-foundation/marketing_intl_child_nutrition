@@ -15,5 +15,5 @@ Per Lead PM Emily McClanahan's new recommendation --Amber
 
 ## Stretch: 
 1. Carousel 
-2. Team Page - Found in "About Us" Link
+2. Team Page - Found in "Our Team" Link
 
