@@ -10,40 +10,30 @@
     <title>Marketing Page | Bountiful Children's Foundation</title>
 
     <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css"/>
+    
     <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
-
-  <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-  
-  <!--<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script> -->
-  
-  <link rel="stylesheet" type="text/css" href="../CSS/index.css"/>
+    
 </head>
 
 <body>
-
     <div class="top-bar">
-        <!-- Change to "nav-bar" on this one page? -->
-        <div class="container">
-            <a href="https://bountifulchildrensfoundation.org/"><img src="images/logo.png" class="logo"/
-                    alt="Logo for Bountiful Children's Foundation"></a>
-
-            <div class="login">
-                <a href="#">Our Team</a> <!-- Create this page for stretch -->
-                <a href="../HTML/country.html">Our Work</a> 
-                <a href="https://bountifulchildrensfoundation.org/how-to-help">Get Involved</a>
-            </div>
-        </div>
+        <header class="container">
+            <nav class="nav">
+                <a href="https://bountifulchildrensfoundation.org/"><img src="images/logo.png" class="logo"/
+                alt="Logo for Bountiful Children's Foundation"></a>
+            
+                <a href="#">Our Team</a></li> <!-- Create this page for stretch -->
+                <a href="../HTML/country.html">Our Work</a></li>
+                <a href="https://bountifulchildrensfoundation.org/how-to-help">Get Involved</a></li>
+            </nav>
+        </header>
     </div>
-
     <h2 class="header-name">Bountiful Child Nutrition Tracker</h2>
-    
-    <p>There are a lot of child malnutrition nonprofits around the globe. It’s difficult to keep track of 
-        all the data for thousands of kids that are screened. This apps allows their data to be entered 
-        and saved, and tracked over time. It keeps records organized by both country name and community name.</p>
-    
         <!-- Carousel Code Starts Here -->
+<section>
     <div class="child-Slider" id="slider-1">
         <img src="images/slide-1.jpg" alt="">
         <img src="images/slide-2.jpg" alt="">
@@ -61,35 +51,54 @@
             bullets: true, // show / hide bullets
         });
     </script>
-
+</section>
     <!-- App Highlights -->
+<section class="features">
+    <p>There are a lot of child malnutrition nonprofits around the globe. It’s difficult to keep track of 
+            all the data for thousands of kids that are screened. This apps allows their data to be entered 
+            and saved, and tracked over time. It keeps records organized by both country name and community name.</p>
+    <div class="cards">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-title">19 Countries Served</div>
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <div class="card-back">
+                    <p class="card-text">Admin Users have the ability to create a new country, as well as access to all communities 
+                serviced in a country. Clicking on a country shows a list of communities where screenings 
+                have taken place.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-title">Get Community Specific</div>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="card-back">
+                    <p class="card-text">Within communities, Admin Users have the ability to review all children. Clicking on a 
+                community shows a list of children screened.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <div class="card-title">The Individual Matters</div>
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="card-back">
+                    <p class="card-text">User can view an individual child. If a child has multiple screening instances, this app
+                shows a graph of their weight over time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <div>
-        <div class="cards">
-            <div class="countries">
-                <h4>19 Countries Served <br> (so far)</h4>
-                <i class="fas fa-globe-americas"></i>
-                <p>Admin Users have the ability to create a new country, as well as access to all communities 
-                    serviced in a country. Clicking on a country shows a list of communities where screenings 
-                    have taken place.</p>
-            </div>
-            <div class="communities">
-                <h4>Get Community Specific</h4>
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Within communities, Admin Users have the ability to review all children. Clicking on a 
-                    community shows a list of children screened.</p>
-            </div>
-            <div class="child-stats">
-                <h4>The Individual Matters</h4>
-                <i class="fas fa-user-md"></i>
-                <p>User can view an individual child. If a child has multiple screening instances, this app
-                    shows a graph of their weight over time.</p>
-            </div>
-        </div>
-        
-        <div class="cta">
-            <a href="../HTML/country.html"><h3>Ready to See More?</h3></a>
-        </div>
+<a href="../HTML/country.html" class="cta"><h3>Ready to See More?</h3></a>
         
     </div>
 
