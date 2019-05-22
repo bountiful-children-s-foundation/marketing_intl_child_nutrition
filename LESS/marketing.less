@@ -1,0 +1,49 @@
+
+.container { //header bar
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    // margin: 0% auto;
+    padding: 0% 2%;
+    
+    @media @phone{
+        width: 80%;
+        margin: 0% auto;
+      }   
+}
+
+.logo {
+    margin: 0% auto;
+    
+}
+
+.nav {
+   margin: 0;
+   padding-top: 10px;
+   color: @font-color;
+   font-size: 20px;
+
+   @media @small-pc-monitor{
+    margin: 1%;
+  }   
+}
+
+.nav a {
+    padding: 0% 4%;
+    display: flex;
+    align-items: center;
+
+}
+
+.header-name {
+ background-color: @header-line;
+ color: @primary-color;
+ margin-top: 1em;
+ margin-bottom: 1em;
+ padding: 0.75em 0 0.75em 3em;
+ display: flex;
+ justify-content: left;
+ font-weight: 700;
+}
+
