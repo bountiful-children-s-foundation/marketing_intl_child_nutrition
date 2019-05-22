@@ -171,6 +171,7 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0% auto;
   padding: 0% 2%;
 }
 @media (max-width: 500px) {
@@ -629,15 +630,15 @@ nav ul li {
   width: 90%;
 }
 nav ul li a {
-  color: black;
-  background-color: white;
+  color: #FE7006;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 1.25em;
-  padding: 1em 3em;
+  padding: 1em;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.6em;
 }
 nav ul li:first-child {
   margin-right: auto;
@@ -739,11 +740,12 @@ nav ul li a.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #FE7006;
-  /* Change to match */
+  color: #fff;
+  background-color: #2db1a8;
   text-decoration: none;
-  font-size: 2.5em;
-  margin-top: 1.5em;
+  font-size: 6em;
+  font-weight: 700;
+  padding: 5%;
 }
 /* Footer */
 .footer {
