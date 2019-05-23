@@ -1,18 +1,14 @@
-section {
+.teammates {
     display: inline-block;
     width: 400px;
     margin: 0 10px 40px;
     box-shadow: 0 4px 7px @bio-shadow;
     vertical-align: top;
-  }
 
-.headshot {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+    @media @phone {
+        width: 50%;
+      }
   }
-
 .team {
     margin: 0 auto;
     padding-top: 1%;
@@ -29,6 +25,13 @@ section {
     color: @primary-color;
     background: @app-features;
 }
+
+.headshot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
 .bio {
     font-size: 16px;
