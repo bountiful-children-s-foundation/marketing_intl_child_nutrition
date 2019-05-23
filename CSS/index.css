@@ -791,7 +791,7 @@ nav ul li a.logo {
   font-weight: 600;
   margin-top: 2.5em;
 }
-section {
+.teammates {
   display: inline-block;
   width: 400px;
   margin: 0 10px 40px;
