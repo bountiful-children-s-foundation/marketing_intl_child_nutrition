@@ -4,6 +4,10 @@
     margin: 0 10px 40px;
     box-shadow: 0 4px 7px @bio-shadow;
     vertical-align: top;
+    @media @tablet {
+        width: 90%;
+        margin-top: 15px; 
+    }
   }
 
 .headshot {
@@ -18,6 +22,11 @@
     padding-top: 1%;
     display: flex;
     justify-content: space-around;
+    @media @tablet {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
 }
 
 .team-card h3 {
