@@ -206,6 +206,20 @@ img {
   justify-content: left;
   font-weight: 700;
 }
+@media (max-width: 500px) {
+  .header-name {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+}
+.links {
+  margin: 0% auto;
+}
+@media (max-width: 800px) {
+  .links {
+    display: grid;
+  }
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -613,6 +627,13 @@ h2 {
   padding: 0;
   font-size: 15px;
 }
+@media (max-width: 500px) {
+  .mkt-body {
+    font-size: 9px;
+    width: 80%;
+    margin: 0% auto;
+  }
+}
 nav {
   background-color: white;
   margin: 0;
@@ -664,6 +685,11 @@ nav ul li a.logo {
   display: flex;
   justify-content: left;
   font-weight: 500;
+}
+@media (max-width: 500px) {
+  .features .features-intro {
+    font-size: 16px;
+  }
 }
 .features .cards {
   color: #fff;
@@ -746,6 +772,16 @@ nav ul li a.logo {
   font-size: 6em;
   font-weight: 700;
   padding: 5%;
+}
+@media (max-width: 800px) {
+  .cta {
+    font-size: 28px;
+  }
+}
+@media (max-width: 500px) {
+  .cta {
+    font-size: 24px;
+  }
 }
 /* Footer */
 .footer {
