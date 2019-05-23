@@ -1,171 +1,192 @@
 /* Marketing Page Nav Bar */
 .mkt-body {
-    margin: 10px;
-    padding: 0;
-    font-size: 15px;
+  margin: 10px;
+  padding: 0;
+  font-size: 15px;
+
+  @media @phone {
+    font-size: 9px;
+    width: 80%;
+    margin: 0% auto;
+    
   }
-  
-  nav {
-    background-color: @primary-color;
-    margin: 0;
-    padding-top: 1%;
-    overflow: hidden;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    display: flex;
-    list-style-type: none;
-    width: 90%; 
-  }
-  
-  nav ul li a {
-    color: @app-features;
-    background-color: @primary-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1.25em;
-    padding: 1em;
-    text-decoration: none;
-    font-size: 1.6em;
-  }
-  
-  nav ul li:first-child {
-    margin-right: auto;
-  }
-  
-  nav ul li a.logo {
-    background-color: transparent;
-    width: 100%;
-  }
+}
+
+nav {
+  background-color: white;
+  margin: 0;
+  padding-top: 1%;
+  overflow: hidden;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: flex;
+  list-style-type: none;
+  width: 90%;
+}
+
+nav ul li a {
+  color: @app-features;
+  background-color: @primary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.25em;
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.6em;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+}
+
+nav ul li a.logo {
+  background-color: transparent;
+  width: 100%;
+}
 
 /* App Highlights style */
 
 .features {
-    background: @app-bkgrd;
-    
-    p {
-      color: @primary-color;
-      padding: 0 2em 1em;
-      line-height: 1.5;
-      font-size: 2.2em;
-    }
+  background: @app-bkgrd;
 
-    .features-intro {
-        background-color: @header-line;
-        color: @primary-color;
-        padding: 5%;
-        display: flex;
-        justify-content: left;
-        font-weight: 500;
+  p {
+    color: @primary-color;
+    padding: 0 2em 1em;
+    line-height: 1.5;
+    font-size: 2.2em;
+  }
+
+  .features-intro {
+    background-color: @header-line;
+    color: @primary-color;
+    padding: 5%;
+    display: flex;
+    justify-content: left;
+    font-weight: 500;
+
+    @media @phone {
+      font-size: 16px;
     }
-    
-    .cards {
-      color: @primary-color;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 5%;
-    
-  
-      .card {
-        background: transparent;
-        height: 300px;
-        width: 300px;
-        max-width: 500px;
-        perspective: 1000px;
-  
-        &:not(:last-child) {
-          margin-right: 4%;
-        }
-  
-        &:hover .card-inner {
-          transform: rotateY(180deg);
-        }
-  
-        .card-inner {
-          background: @app-features;
-          position: relative;
+  }
+
+  .cards {
+    color: @primary-color;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+
+
+    .card {
+      background: transparent;
+      height: 300px;
+      width: 300px;
+      max-width: 500px;
+      perspective: 1000px;
+
+      &:not(:last-child) {
+        margin-right: 4%;
+      }
+
+      &:hover .card-inner {
+        transform: rotateY(180deg);
+      }
+
+      .card-inner {
+        background: @app-features;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        /*box-shadow: 0 5px 5px white;*/
+        border-radius: 100%;
+
+        .card-front,
+        .card-back {
+          position: absolute;
           width: 100%;
           height: 100%;
-          transition: transform 0.6s;
-          transform-style: preserve-3d;
-          /*box-shadow: 0 5px 5px white;*/
-          border-radius: 100%;
-  
-          .card-front, .card-back {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+
+        .card-front {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 2rem;
+          padding-bottom: 1rem;
+          z-index: 2;
+
+          .card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
           }
-  
-          .card-front {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            z-index: 2;
-  
-            .card-title {
-              font-size: 1.8rem;
-              font-weight: 600;
-              margin-bottom: 1rem;
-            }
-  
-            .fas {
-              color: @primary-color;
-              font-size: 12rem;
-            } 
-          } 
-  
-         .card-back {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            transform: rotateY(180deg);
-            z-index: 1;
-  
-            .card-text {
-              padding: 2rem;
-              font-size: 1.6em;
-            } 
+
+          .fas {
+            color: @primary-color;
+            font-size: 12rem;
+          }
+        }
+
+        .card-back {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          transform: rotateY(180deg);
+          z-index: 1;
+          
+
+          .card-text {
+            padding: 2rem;
+            font-size: 1.6em;
           }
         }
       }
     }
   }
-  
-  /* CTA Link */
-  .cta {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: @primary-color; 
-    background-color: @header-line;
-    text-decoration: none;
-    font-size: 6em;
-    font-weight: 700;
-    padding: 5%;
+}
+
+/* CTA Link */
+.cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: @primary-color;
+  background-color: @header-line;
+  text-decoration: none;
+  font-size: 6em;
+  font-weight: 700;
+  padding: 5%;
+
+  @media @tablet {
+    font-size: 28px;
   }
-  
- /* Footer */
+
+  @media @phone {
+    font-size: 24px;
+  }
+}
+
+/* Footer */
 .footer {
-    display: flex;
-    justify-content: center;
-    font-size: 1em;
-    font-weight: 600;
-    margin-top: 2.5em;
-  }
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 600;
+  margin-top: 2.5em;
+}
