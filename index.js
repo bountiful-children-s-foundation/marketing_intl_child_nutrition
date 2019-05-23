@@ -1,8 +1,5 @@
-// Amber's JS Test Page for Homepage
+// Countries Page
 
-
-// Handler that uses various data-* attributes to trigger
-// specific actions, mimicing bootstraps attributes
 const triggers = Array.from(document.querySelectorAll('[data-toggle="collapse"]'));
 
 document.addEventListener('click', (ev) => {
