@@ -4,8 +4,9 @@
     margin: 0 10px 40px;
     box-shadow: 0 4px 7px @bio-shadow;
     vertical-align: top;
+
     @media @tablet {
-        width: 90%;
+        width: 100%;
         margin-top: 15px; 
     }
   }
@@ -22,6 +23,7 @@
     padding-top: 1%;
     display: flex;
     justify-content: space-around;
+    
     @media @tablet {
         display: flex;
         flex-direction: column;
@@ -37,6 +39,10 @@
     text-transform: uppercase;
     color: @primary-color;
     background: @app-features;
+
+    @media @phone {
+        padding: 0;
+    }
 }
 
 .bio {

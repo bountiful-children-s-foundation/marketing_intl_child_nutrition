@@ -627,7 +627,7 @@ h2 {
     opacity: 0;
   }
 }
-/* Marketing Page Nav Bar */
+/* Marketing Page & Team Page Nav Bar */
 .mkt-body {
   margin: 10px;
   padding: 0;
@@ -636,12 +636,12 @@ h2 {
 @media (max-width: 500px) {
   .mkt-body {
     font-size: 9px;
-    width: 80%;
+    width: 100%;
     margin: 0% auto;
   }
 }
 nav {
-  background-color: white;
+  background-color: #fff;
   margin: 0;
   padding-top: 1%;
   overflow: hidden;
@@ -671,7 +671,7 @@ nav ul li:first-child {
   margin-right: auto;
 }
 nav ul li a.logo {
-  background-color: transparent;
+  height: 85px;
   width: 100%;
 }
 /* App Highlights style */
@@ -707,11 +707,11 @@ nav ul li a.logo {
   padding: 5%;
 }
 .features .cards .card {
-  background: transparent;
   height: 300px;
   width: 300px;
   max-width: 500px;
   perspective: 1000px;
+  padding-bottom: 0.75em;
 }
 .features .cards .card:not(:last-child) {
   margin-right: 4%;
@@ -726,7 +726,6 @@ nav ul li a.logo {
   height: 100%;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  /*box-shadow: 0 5px 5px white;*/
   border-radius: 100%;
 }
 .features .cards .card .card-inner .card-front,
@@ -806,7 +805,7 @@ nav ul li a.logo {
 }
 @media (max-width: 800px) {
   .teammates {
-    width: 90%;
+    width: 100%;
     margin-top: 15px;
   }
 }
@@ -837,6 +836,11 @@ nav ul li a.logo {
   text-transform: uppercase;
   color: #fff;
   background: #FE7006;
+}
+@media (max-width: 500px) {
+  .team-card h3 {
+    padding: 0;
+  }
 }
 .bio {
   font-size: 16px;
