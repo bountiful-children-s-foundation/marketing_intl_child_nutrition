@@ -614,7 +614,7 @@ h2 {
   font-size: 15px;
 }
 nav {
-  background-color: white;
+  background-color: #fff;
   margin: 0;
   padding-top: 1%;
   overflow: hidden;
@@ -755,18 +755,17 @@ nav ul li a.logo {
   font-weight: 600;
   margin-top: 2.5em;
 }
-section {
+.teammates {
   display: inline-block;
   width: 400px;
   margin: 0 10px 40px;
   box-shadow: 0 4px 7px #ACA59F;
   vertical-align: top;
 }
-.headshot {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+@media (max-width: 500px) {
+  .teammates {
+    width: 50%;
+  }
 }
 .team {
   margin: 0 auto;
@@ -782,6 +781,12 @@ section {
   text-transform: uppercase;
   color: #fff;
   background: #FE7006;
+}
+.headshot {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 .bio {
   font-size: 16px;
