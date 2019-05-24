@@ -1,6 +1,6 @@
 .container {
   //header bar
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -8,14 +8,18 @@
   padding: 0% 2%;
 
   @media @phone {
-    width: 80%;
+    width: 100%;
     margin: 0% auto;
+  }
+
+  @media @tablet {
+    width: 100%;
   }
 }
 
 .logo {
   margin: 0% auto;
-
+  width: 100%;
 }
 
 .login {
@@ -47,6 +51,11 @@
     font-size: 16px;
     font-weight: bolder;
   }
+
+  @media @tablet {
+    width: 100%;
+    font-size: 36px;
+  }
 }
 
 
@@ -55,7 +64,7 @@
 
   @media @tablet {
     display: grid;
-}
+  }
 }
 
 
